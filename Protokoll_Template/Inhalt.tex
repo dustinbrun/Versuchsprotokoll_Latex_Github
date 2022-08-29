@@ -1,0 +1,136 @@
+\section{Aufgabenstellung}
+	Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+			
+%------------------------------------------------------------------------------------------------
+
+\section{Grundlagen}
+	Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+\subsection{Bilder}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.2]{pictures/platzhalter_bild.png}
+		\caption{Bild einzeln zentriert}
+		\label{fig:platzhalter_bild}
+	\end{figure}
+
+	Im Text kann auf Abbildung~\ref{fig:platzhalter_bild} verwiesen werden.
+	
+	\newpage 
+	
+	Zwei Abbildungen nebeneinander:
+	
+	\begin{figure}[H]
+		\centering
+		\begin{minipage}{0.45\linewidth}
+			\includegraphics[width=1.0\linewidth]{pictures/platzhalter_bild.png}
+			\caption{Linkes Bild}
+			\centering
+			\label{fig:platzhalter_bild2}
+		\end{minipage}\hspace{2em}%\hfill%
+		\begin{minipage}{0.45\linewidth}
+			\includegraphics[width=1.0\linewidth]{pictures/platzhalter_bild.png}
+			\caption{Rechtes Bild}
+			\centering
+			\label{fig:platzhalter_bild3}
+		\end{minipage}
+	\end{figure}
+	
+
+\subsection{Gleichungen}
+	Eine Gleichung mit Erläuterungen zu den Verwendeten Variablen. 
+	\begin{equation}
+		\label{eq:Ohmsches_Gesetz}
+		R = \frac{U}{I}
+	\end{equation}
+	\begin{tabular}[H]{lcp{12cm}}
+		$R$ & $-$ & Widerstand in $\si{\ohm}$ \\
+		$U$ & $-$ & Spannung in $\si{\volt}$ \\
+		$I$ & $-$ & Stromstärke in $\si{\ampere}$ \\
+	\end{tabular}
+
+	Im Text kann auf Gleichung~\ref{eq:Ohmsches_Gesetz} verwiesen werden.
+	
+	
+	Eine Gleichung ohne Erläuterungen:
+	\begin{equation}
+		\label{eq:Normalverteilung}
+		h(x) = \frac{1}{\sigma \sqrt{2\pi}}\cdot e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+	\end{equation}
+
+	Gleichungsumgebung für ausführliche Berechnungen:
+	\begin{equation*}
+		\begin{split}
+			R &= \frac{U}{I} \\
+			  &= \frac{\SI{100}{\milli \volt}}{\SI{5}{\ampere}} \\
+			  &= \frac{100 \cdot 10^{-3} \si{\volt}}{\SI{5}{\ampere}} \\
+			R &= \SI{0,02}{\ohm} = \underline{\underline{\SI{20}{\milli \ohm}}}.
+		\end{split}
+	\end{equation*}
+
+\subsection{Tabellen}
+Eine Beispiel-Tabelle für Messwerte:
+\begin{table}[H]
+	\centering
+	\caption{Messwerte}
+	\label{tab:Messwerte}
+	\setlength{\extrarowheight}{3pt}
+	\begin{tabular}{C{1.8cm}|C{1.8cm}|C{1.8cm}}
+		\rowcolor[gray]{.9}
+		$U \:/\: \si{\volt}$	& $U_{2} \:/\:\si{\milli \volt}$	& $I \:/\:\si{\nano \ampere}$ \\
+		\hline\hline
+		1,2						& 3,4			& 5,67 \\
+		\hline
+		8,910					& 11,12			& 13,14 \\
+		\hline
+		1,2						& 3,4			& 5,67 \\
+		\hline
+		8,910					& 11,12			& 13,14 \\
+		
+	\end{tabular}
+\end{table}
+
+\subsection{Weitere nützliche Befehle}
+	Texte in \enquote{Anführungszeichen} mit \verb|\enquote{}|
+	
+	Quelltext-Formatierung s.o.
+	
+	Inline-Formel: Der Wert des Widerstandes beträgt: $R = \SI{100}{\ohm}$.
+	
+	Einheiten ohne Zahlenwert $\si{\ohm}$ und mit Zahlenwert $\SI{100}{\ohm}$.
+	
+	Zitat einer Quelle: \cite{Versuchsanleitung}.
+	
+\subsection*{Unnummerierte Abschnitte, Formeln, etc. mit \enquote{*}}
+	
+	
+%------------------------------------------------------------------------------------------------
+
+\section{Versuchsaufbau}
+	 Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+%------------------------------------------------------------------------------------------------	
+
+\section{Durchführung und Auswertung}
+	Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+
+
+%------------------------------------------------------------------------------------------------
+
+\section{Ergebnisse und Diskussion}
+	Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+	
+%------------------------------------------------------------------------------------------------
+
+%Literaturverzeichnis
+\begin{thebibliography}{}
+	\bibitem{Versuchsanleitung}
+	Professur XYZ:	\emph{Versuchsanleitung zum Versuch <Versuchsname>}
+	
+	\bibitem{samplepdf}
+	africau.edu:
+	\emph{A Simple PDF File}, \url{http://www.africau.edu/images/default/sample.pdf}, 20.\,Mar.~2022.
+\end{thebibliography}
+
